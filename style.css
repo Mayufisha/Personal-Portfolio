@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B192C;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    background-color: rgb(1, 21, 39);
+    z-index: 1000;
+    width: 100%;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+header ul li a:active{
+    color: black;
+    background-color: white;
+}
+header ul li a:hover {
+    color: lightblue;
+}
+
+#home{
+    display: flex;
+    flex-direction: row;
+}
+section, footer {
+    padding: 50px 10%;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    margin: autoN;
+}
+
+.profile img{
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-left: 32px;
+    width: 600px;
+    height: 400px;
+    justify-content: flex-end;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+#skills h1{
+    text-align: center;
+    margin: 5px;
+}
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    padding: 16px;
+}
+.skill-item{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(1, 21, 39);
+    border-radius: 8px;
+    padding: 16px;
+
+
+}
+.skill-item:hover{
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+}
+.skill-item img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-item h3{
+    text-align: center;
+}
+.skill-item p{
+    font-size: 18px;
+}
+.projects-content h2{
+    text-align: center;
+    margin: 16px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
+.project-card{
+    padding: 16px;
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(1, 21, 39);
+
+
+}
+.project-card:hover{
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.4);
+}
+.project-card img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#card-1 {
+    grid-row: span 2 / span 2;
+}
+
+#card-2 {
+    grid-row: span 2 / span 2;
+}
+
+#card-3 {
+    grid-row: span 2 / span 2;
+}
+
+#card-4{
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+#card-5 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+#card-6 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+#contact {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+#contact form input[type="submit"] {
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(1, 21, 39);
+
+}
+footer p{
+     text-align: center;
+
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+.bottom-left{
+    margin:10px 32px;
+    flex: 1;
+}
+.bottom-left ul{
+    list-style: none;
+}
+.bottom-left ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.bottom-right{
+    justify-content: flex-end;
+    flex: 2;
+    padding: 8px;
+    
+}
+.bottom-right ul{
+    list-style: none;
+    display: inline;
+    margin-top: 12px;
+}
+.bottom-right  ul li{
+    display: inline-block;
+    margin: 8px;
+
+}
+.bottom-right img{
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+    }
+
+    header ul li a {
+        padding: 10px;
+    }
+
+    #contact {
+        width: 90%;
+    }
+}
