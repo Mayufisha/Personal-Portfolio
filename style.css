@@ -343,16 +343,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    header ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        padding: 1em;
-        z-index: 1000;
-        width: 100%;
-    }    
     #hero{
         display: flex;
         flex-direction: column;
@@ -368,8 +358,6 @@ button:hover {
     .skill-item img {
         width: 30px;
         height: 20px;
-        
-       
     }
     .cards{
         display: flex;
@@ -491,14 +479,6 @@ footer p{
 }
 
 @media (max-width: 768px) {
-    header ul {
-        flex-direction: column;
-    }
-
-    header ul li a {
-        padding: 10px;
-    }
-
     #contact {
         width: 90%;
     }
