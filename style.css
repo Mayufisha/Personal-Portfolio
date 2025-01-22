@@ -31,7 +31,7 @@ header::before{
     z-index: -1;
 }
 header .logo{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
@@ -57,7 +57,8 @@ nav a{
 }
 
 nav a:hover {
-    color: lightblue;
+    color: rgb(217, 229, 233);
+    background-color: black;
 }
 @media (max-width: 992px) {
     .header{
@@ -137,6 +138,11 @@ button:hover {
     background-color: darkblue;
 }
 /* about section */
+#about h1{
+    color: #fff;
+    margin: 2em;
+    text-align: center;
+}
 .time-line{
     position: relative;
     max-width: 1200px;
