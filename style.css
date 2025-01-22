@@ -75,6 +75,33 @@ button {
 button:hover {
     background-color: darkblue;
 }
+.time-line{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    color: black;
+
+}
+.time-line-container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.text-box{
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+
 #skills h1{
     text-align: center;
     margin: 5px;
