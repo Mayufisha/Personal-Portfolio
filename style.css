@@ -309,6 +309,7 @@ section, footer {
 .time-line-container img{
     position: absolute;
     width: 40px;
+    height: 40px;
     border-radius: 50%;
     right: -20px;
     top: 32px;
