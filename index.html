@@ -8,69 +8,77 @@
      <script src="script.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 <body class="bg-gray-900 text-white w-[80%] mx-auto">
   <header class="py-4 bg-slate-800 px-6 rounded-lg shadow-lg mt-4 relative">
-    <div class="flex justify-between items-center">
-      <a href="#home" class="text-xl font-bold hover:text-emerald-400 transition duration-300">Samuel Molla</a>
+  <div class="flex justify-between items-center">
+    <a href="#home" class="text-xl font-bold hover:text-emerald-400 transition duration-300">Samuel Molla</a>
 
-      <!-- Menu Toggle -->
-      <input type="checkbox" id="check" class="hidden" />
-      <label for="check" class="cursor-pointer md:hidden z-50 relative">
-        <i class='bx bx-menu text-3xl' id="menu-icon"></i>
-        <i class='bx bx-x text-3xl hidden' id="close-icon"></i>
-      </label>
-
-
-      <!-- Desktop Navigation -->
-      <nav class="nav-links hidden md:flex space-x-6 text-sm font-medium" aria-label="Main navigation">
-        <a href="#home" class="hover:text-emerald-400 transition" data-scroll="home">Home</a>
-        <a href="#about" class="hover:text-emerald-400 transition" data-scroll="about">About</a>
-        <a href="#skills" class="hover:text-emerald-400 transition" data-scroll="skills">Skills</a>
-        <a href="#projects" class="hover:text-emerald-400 transition" data-scroll="projects">Projects</a>
-        <a href="#contact" class="hover:text-emerald-400 transition" data-scroll="contact">Contact</a>
-      </nav>
+    <div class="md:hidden z-50 relative flex items-center space-x-4">
+      <i class='bx bx-menu text-3xl cursor-pointer block' id="menu-icon"></i>
     </div>
 
-    <!-- Fullscreen Mobile Menu -->
-    <div id="mobileMenu" class="fixed inset-0 bg-slate-400 z-40 hidden flex-col items-center justify-center space-y-6 transition-all duration-300">
-      <nav id="mobile-nav" aria-label="Mobile navigation" class="flex flex-col items-center space-y-6 text-xl">
-        <a href="#home" class="hover:scale-110 transition" data-scroll="home">Home</a>
-        <a href="#about" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="about">About</a>
-        <a href="#skills" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="skills">Skills</a>
-        <a href="#projects" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="projects">Projects</a>
-        <a href="#contact" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-links hidden md:flex space-x-6 text-sm font-medium" aria-label="Main navigation">
+      <a href="#home" class="hover:text-emerald-400 transition" data-scroll="home">Home</a>
+      <a href="#about" class="hover:text-emerald-400 transition" data-scroll="about">About</a>
+      <a href="#skills" class="hover:text-emerald-400 transition" data-scroll="skills">Skills</a>
+      <a href="#projects" class="hover:text-emerald-400 transition" data-scroll="projects">Projects</a>
+      <a href="#contact" class="hover:text-emerald-400 transition" data-scroll="contact">Contact</a>
+    </nav>
+  </div>
+
+<!-- Fullscreen Mobile Menu -->
+<div id="mobileMenu" class="fixed inset-0 bg-slate-800 z-40 hidden md:hidden">
+  <!-- Close Icon OUTSIDE of the flex wrapper -->
+  <i class='bx bx-x text-3xl cursor-pointer absolute top-6 right-6 z-50' id="close-icon"></i>
+
+  <!-- True Center Wrapper for nav only -->
+  <div class="flex items-center justify-center h-full">
+    <nav class="flex flex-col items-center space-y-6 text-xl text-white">
+      <a href="#home" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="home">Home</a>
+      <a href="#about" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="about">About</a>
+      <a href="#skills" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="skills">Skills</a>
+      <a href="#projects" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="projects">Projects</a>
+      <a href="#contact" class="hover:scale-110 hover:text-emerald-400 transition" data-scroll="contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+
+</header>
 
 
     <main>
-        <!-- <section id="home" class="hero"> 
-            <div class="hero-sci">
-                <a href="https://www.linkedin.com/in/samuel-molla" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Mayufisha" target="_blank"><i class='bx bxl-github' ></i></a>
-            </div>
-            <div class="hero-content">
-                <h1>Hi, I’m Samuel Molla</h1>
-                <h3>Frontend Developer</h3>
-                <p>I create elegant and efficient solutions using modern web technologies.</p>
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn">Get in Touch</a>
-                
-            </div>
-            <div class="hero-img">
-                <div class="profile">
-                    <div class="image">
-                        <img src="Images/sami.jpg">
-                    </div>
-                
-            </div>
-            </div>
-            
-        </section> -->
+     <section id="home" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 gap-10 bg-gray-900 text-white">
+  <!-- Hero Content -->
+  <div class="text-center md:text-left max-w-lg">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I’m Samuel Molla</h1>
+    <h3 class="text-2xl text-emerald-400 mb-4">Frontend Developer</h3>
+    <p class="mb-6 text-gray-300">I create elegant and efficient solutions using modern web technologies.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6">
+      <a href="#projects" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-6 rounded transition">View My Work</a>
+      <a href="#contact" class="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-semibold py-2 px-6 rounded transition">Get in Touch</a>
+    </div>
+
+    <!-- Social Icons (moved below for mobile) -->
+    <div class="flex justify-center md:justify-start gap-6 text-3xl">
+      <a href="https://www.linkedin.com/in/samuel-molla" target="_blank" class="hover:text-emerald-400 transition"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/Mayufisha" target="_blank" class="hover:text-emerald-400 transition"><i class='bx bxl-github'></i></a>
+    </div>
+  </div>
+
+  <!-- Hero Image -->
+  <div class="w-40 h-40 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-emerald-500 shadow-lg">
+    <img src="Images/sami.jpg" alt="Samuel Molla" class="w-full h-full object-cover">
+  </div>
+</section>
+
+
         
         <!-- <section id="about">
             <h1>My Learning Path</h1>

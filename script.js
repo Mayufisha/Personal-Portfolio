@@ -1,10 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const check = document.getElementById('check');
   const mobileMenu = document.getElementById('mobileMenu');
   const menuIcon = document.getElementById('menu-icon');
   const closeIcon = document.getElementById('close-icon');
 
-  // Scroll to section and close menu
+  // Open menu
+  menuIcon.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    menuIcon.classList.add('hidden');
+    closeIcon.classList.remove('hidden');
+  });
+
+  // Close menu
+  closeIcon.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    menuIcon.classList.remove('hidden');
+    closeIcon.classList.add('hidden');
+  });
+
+  // Close menu on nav link click
   document.querySelectorAll("[data-scroll]").forEach(link => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -14,24 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
         section.scrollIntoView({ behavior: "smooth" });
       }
 
-      // Close mobile menu
-      check.checked = false;
       mobileMenu.classList.add('hidden');
       menuIcon.classList.remove('hidden');
       closeIcon.classList.add('hidden');
     });
-  });
-
-  // Show/hide menu & icons on toggle
-  check.addEventListener('change', () => {
-    if (check.checked) {
-      mobileMenu.classList.remove('hidden');
-      menuIcon.classList.add('hidden');
-      closeIcon.classList.remove('hidden');
-    } else {
-      mobileMenu.classList.add('hidden');
-      menuIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-    }
   });
 });
