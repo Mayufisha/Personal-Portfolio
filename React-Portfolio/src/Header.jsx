@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header>
+        <header class="py-4 bg-slate-800 px-6 rounded-lg shadow-lg mt-4  sticky top-2 z-50">
             <a href="#" class="text-xl font-bold hover:text-emerald-400 transition duration-300">Samuel Molla</a>
             <nav class="nav-links hidden md:flex gap-6 text-sm font-medium" aria-label="Main navigation">
               <a href="#home" class="hover:text-emerald-400 transition" >Home</a>
