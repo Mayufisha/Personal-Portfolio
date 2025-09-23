@@ -1,8 +1,14 @@
-import { useState } from 'react'
 import Header from './Header'
+import Footer from './Footer';
 
 function App() {
-  
+  return(
+    <>
+      <Header />
+      <Projects />
+      <Footer />
+    </>
+  );
 }
 
 export default App
