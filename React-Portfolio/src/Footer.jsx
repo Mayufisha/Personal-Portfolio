@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer class="bg-gray-800 text-white py-10 mt-16">
-  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-around items-center md:items-start gap-10">
+  {/* <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-around items-center md:items-start gap-10">
     <div class="text-center md:text-left">
       <ul class="space-y-2 text-sm">
         <li><a href="#home" class="hover:text-emerald-400 transition">Home</a></li>
@@ -26,9 +26,9 @@ function Footer() {
         </a>
       </div>
     </div>
-  </div>
+  </div> */}
 
-  <div class="text-center text-sm text-gray-400 mt-10">
+  <div class="text-center text-sm text-gray-400 ">
     &copy; 2025 Samuel Molla. All Rights Reserved.
   </div>
 </footer>

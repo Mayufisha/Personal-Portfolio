@@ -1,23 +1,36 @@
-import Header from './Header'
-import Home from './Home';
-import About from './About';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contant';
-import Footer from './Footer';
+import { useState, useMemo } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import Home from "./Home";
+import About from "./About";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
-function App() {
-  return(
+export default function App() {
+  
+  const [active, setActive] = useState("home");
+
+  const sections = useMemo(
+    () => ({
+      home: Home,
+      about: About,
+      skills: Skills,
+      projects: Projects,
+      contact: Contact,
+    }),
+    []
+  );
+
+  const Section = sections[active] ?? Home;
+
+  return (
     <>
-      <Header />
-      <Home/>
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Header active={active} setActive={setActive} />
+      <main className="min-h-[70vh]">
+        <Section />
+      </main>
       <Footer />
     </>
   );
 }
-
-export default App
