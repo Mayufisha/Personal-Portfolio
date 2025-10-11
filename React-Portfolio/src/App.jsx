@@ -26,11 +26,13 @@ export default function App() {
 
   return (
     <>
+      <div className="bg-gray-900">
       <Header active={active} setActive={setActive} />
       <main className="min-h-[70vh]">
         <Section />
       </main>
       <Footer />
+      </div>
     </>
   );
 }
