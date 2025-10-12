@@ -17,10 +17,7 @@ function Home() {
            <h3 className="text-2xl text-emerald-400 mb-4">Frontend Developer</h3>
            <p className="mb-6 text-gray-300">I create elegant and efficient solutions using modern web technologies.</p>
            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6">
-             <a href="#projects" className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-6 rounded transition">View My Work</a>
-             <a href="#contact" className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-semibold py-2 px-6 rounded transition">Get in Touch</a>
-             <a href="#" className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-semibold py-2 px-6 rounded transition">Resume</a>
-
+             <a href="./Samuel_Molla_Resume.pdf" className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-6 rounded transition" target="_blank">Resume</a>
            </div>
 
            <div className="flex justify-center md:justify-start gap-6 text-3xl">
