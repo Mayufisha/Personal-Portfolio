@@ -1,7 +1,10 @@
 function Footer() {
+  
     return (
         <footer className="bg-gray-800 text-white py-10 ">
   <div className="max-w-6xl mx-auto px-6 flex flex-row justify-around items-center md:items-start gap-10">
+   
+   
     <div className=" text-center md:text-left">
       <ul className="flex flex-row space-x-4 text-sm">
         <li><a href="#home" className="hover:text-emerald-400 transition">Home</a></li>
