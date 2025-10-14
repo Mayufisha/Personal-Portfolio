@@ -134,7 +134,7 @@ function Skills() {
     </div>
   </div>
   <p className="text-sm"><span className="text-gray-400">Proficiency:</span> <span className="text-emerald-400 font-semibold">Beginner</span></p>
-  <p className="text-sm mt-2"><span className="text-gray-400">📍 Learned at:</span> <span classNameName="font-semibold">VCC</span></p>
+  <p className="text-sm mt-2"><span className="text-gray-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
 </div>
 
 

@@ -8,7 +8,7 @@ function Contact(){
       <input 
         type="text" 
         placeholder="Name" 
-        class="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
         required
       />
 

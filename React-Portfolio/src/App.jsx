@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -23,6 +23,15 @@ export default function App() {
   );
 
   const Section = sections[active] ?? Home;
+
+  useEffect(() => {
+  const element = document.getElementById(active);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}, [active]);
 
   return (
     <>
