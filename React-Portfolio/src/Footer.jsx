@@ -1,21 +1,38 @@
-function Footer() {
+import { useState } from "react";
+function Footer({ active, setActive }) {
+  const footer_nav = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact" },
+  ];
   
-    return (
-        <footer className="bg-gray-800 text-white py-10 ">
-  <div className="max-w-6xl mx-auto px-6 flex flex-row justify-around items-center md:items-start gap-10">
-   
-   
-    <div className=" text-center md:text-left">
-      <ul className="flex flex-row space-x-4 text-sm">
-        <li><a href="#home" className="hover:text-emerald-400 transition">Home</a></li>
-        <li><a href="#about" className="hover:text-emerald-400 transition">About</a></li>
-        <li><a href="#skills" className="hover:text-emerald-400 transition">Skills</a></li>
-        <li><a href="#projects" className="hover:text-emerald-400 transition">Projects</a></li>
-        <li><a href="#contact" className="hover:text-emerald-400 transition">Contact</a></li>
-      </ul>
-    </div>
+  return (
+    <footer className="bg-gray-800 text-white py-10 ">
+      <div className="max-w-6xl mx-auto px-6 flex flex-row justify-around items-center md:items-start gap-10">
+        <nav
+        className="nav-links flex gap-6 text-sm font-medium"
+        aria-label="Main navigation"
+      >
+        {footer_nav.map((item) => {
+          const isActive = active === item.id;
+          return (
+            <button
+              key={item.id}
+              onClick={() => setActive(item.id)}
+              className={
+                "hover:text-emerald-400 transition " +
+                (isActive ? "text-emerald-400" : "text-gray-200")
+              }
+            >
+              {item.label}
+            </button>
+          );
+        })}
+        </nav>
 
-    <div className="text-center">
+        <div className="text-center">
       <h2 className="text-lg font-semibold mb-3">Let's Connect</h2>
       <div className="flex justify-center gap-6 text-2xl">
         <a href="mailto:sambenmayu@gmail.com" target="_blank" className="hover:text-emerald-400 transition">
@@ -28,13 +45,12 @@ function Footer() {
           <i className="fa-brands fa-github"></i>
         </a>
       </div>
-    </div>
-  </div> 
-
-  <div className="text-center text-sm text-gray-400 ">
-    &copy; 2025 Samuel Molla. All Rights Reserved.
-  </div>
-</footer>
+        </div>
+      </div> 
+      <div className="text-center text-sm text-gray-400 ">
+       &copy; 2025 Samuel Molla. All Rights Reserved.
+      </div>
+    </footer>
     );
 }
 export default Footer;
