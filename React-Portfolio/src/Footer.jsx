@@ -10,11 +10,11 @@ function Footer({ active, setActive }) {
   
   return (
     <footer className="bg-gray-800 text-white py-10 ">
-      <div className="max-w-6xl mx-auto px-6 flex flex-row justify-around items-center md:items-start gap-10">
+      <div className="flex flex-col md:flex-row justify-around items-center gap-6 md:gap-10">
         <nav
         className="nav-links flex gap-6 text-sm font-medium"
-        aria-label="Main navigation"
-      >
+        aria-label="Footer navigation"
+       >
         {footer_nav.map((item) => {
           const isActive = active === item.id;
           return (
@@ -22,8 +22,7 @@ function Footer({ active, setActive }) {
               key={item.id}
               onClick={() => setActive(item.id)}
               className={
-                "hover:text-emerald-400 transition " +
-                (isActive ? "text-emerald-400" : "text-gray-200")
+                "hover:text-emerald-400 transition "
               }
             >
               {item.label}
@@ -47,7 +46,8 @@ function Footer({ active, setActive }) {
       </div>
         </div>
       </div> 
-      <div className="text-center text-sm text-gray-400 ">
+      
+      <div className="text-center text-sm text-gray-400 mt-2 -mb-6 ">
        &copy; 2025 Samuel Molla. All Rights Reserved.
       </div>
     </footer>

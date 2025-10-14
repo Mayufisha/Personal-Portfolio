@@ -31,7 +31,7 @@ export default function App() {
       <main className="min-h-[70vh]">
         <Section />
       </main>
-      <Footer />
+      <Footer  active={active} setActive={setActive} />
       </div>
     </>
   );
