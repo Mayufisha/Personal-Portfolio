@@ -1,9 +1,28 @@
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
 function Contact(){
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_2n8ny4b",
+        "template_btn1lqg",
+        form.current,
+        "m_3-wuO4CzWqVtDEF"
+      )
+      .then(
+        () => alert("Message sent successfully!"),
+        (error) => alert("Failed to send message: " + error.text)
+      );
+    e.target.reset();
+  };
     return(
         <section id="contact" className="min-h-screen py-16 bg-gray-900 text-white">
   <div className="max-w-xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
-    <form action="#" className="bg-slate-800 p-8 rounded-lg shadow-lg space-y-6">
+    <form ref={form} onSubmit={sendEmail} className="bg-slate-800 p-8 rounded-lg shadow-lg space-y-6">
       
       <input 
         type="text" 
