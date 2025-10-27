@@ -12,7 +12,7 @@ function Projects() {
     <h3 className="text-xl font-semibold mb-2">Job Application Tracker</h3>
     <p className="text-gray-300 mb-4">A full-stack CRUD web app to manage job applications with filters, secure login, and responsive design.</p>
     <div className="flex flex-wrap gap-4">
-      <a href="https://job-application-tracker-vubk.onrender.com" target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition">Live Demo</a>
+      <a href="https://my-job-application-tracker.netlify.app/" target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition">Live Demo</a>
       <a href="https://github.com/Mayufisha/Job-Application-Tracker" target="_blank" className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-medium py-1 px-4 rounded transition">GitHub</a>
     </div>
   </div>
