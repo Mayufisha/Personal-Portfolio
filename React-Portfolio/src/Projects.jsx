@@ -3,6 +3,26 @@ function Projects() {
            <section id="projects" className="min-h-screen py-16 bg-gray-900 text-white">
   <div className="max-w-6xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
+      <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+  <img src="/Images/skillswap-2.0.png" alt="SkillSwap 2.0 Screenshot" className="w-full h-48 object-cover" />
+  <div className="p-6">
+    <h3 className="text-xl font-semibold mb-2">SkillSwap 2.0</h3>
+    <p className="text-gray-300 mb-4">
+      A peer-learning platform with profiles, skill feeds, categories, favorites, and a fully responsive Tailwind UI.
+    </p>
+    <div className="flex flex-wrap gap-4">
+      <a href="https://skillswap-2-0.netlify.app/" target="_blank"
+        className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition">
+        Live Demo
+      </a>
+      <a href="https://github.com/Mayufisha/SkillSwap-2.0" target="_blank"
+        className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-medium py-1 px-4 rounded transition">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
      
