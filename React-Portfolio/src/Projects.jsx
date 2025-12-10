@@ -34,7 +34,7 @@ function Projects() {
           {/* SkillSwap 2.0 */}
           <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
             <img
-              src="/Images/skillswap-2.0.png"
+              src="/Images/skillSwap.png"
               alt="SkillSwap 2.0 Screenshot"
               className="w-full h-48 object-cover"
             />
