@@ -102,7 +102,7 @@ function Projects() {
           {/* Personal Portfolio */}
           <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
             <img
-              src="https://picsum.photos/200/300"
+              src="/Images/plain-portfolio.png"
               alt="Personal Portfolio"
               className="w-full h-48 object-cover"
             />
