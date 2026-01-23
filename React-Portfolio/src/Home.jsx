@@ -14,7 +14,7 @@ function Home() {
           </div>
          <div className="text-center md:text-left max-w-lg">
            <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Samuel Molla</h1>
-           <h3 className="text-2xl text-emerald-400 mb-4">Frontend Developer</h3>
+           <h3 className="text-2xl text-emerald-400 mb-4">A Full-Stack Developer</h3>
            <p className="mb-6 text-gray-300">I create elegant and efficient solutions using modern web technologies.</p>
            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6">
              <a href="./Samuel_Molla_Resume.pdf" className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-6 rounded transition" target="_blank">Resume</a>
