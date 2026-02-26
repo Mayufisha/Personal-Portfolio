@@ -8,7 +8,7 @@ function Projects() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Expense Tracker */}
-          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
             <img
               src="/Images/expense-tracker.png"
               alt="Expense Tracker Screenshot"
@@ -34,7 +34,7 @@ function Projects() {
           </div>
 
           {/* SkillSwap 2.0 */}
-          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
             <img
               src="/Images/skillSwap.png"
               alt="SkillSwap 2.0 Screenshot"
@@ -68,7 +68,7 @@ function Projects() {
           </div>
 
           {/* Job Application Tracker */}
-          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
             <img
               src="/Images/Job-tracker-logo.png"
               alt="Job Application Tracker Screenshot"
@@ -102,7 +102,7 @@ function Projects() {
           </div>
 
           {/* Personal Portfolio */}
-          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
             <img
               src="/Images/plain-portfolio.png"
               alt="Personal Portfolio"
@@ -136,7 +136,7 @@ function Projects() {
           </div>
 
           {/* Little Lemon Restaurant */}
-          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
             <img
               src="/Images/little-lemon-preview.png"
               alt="Little Lemon Restaurant"

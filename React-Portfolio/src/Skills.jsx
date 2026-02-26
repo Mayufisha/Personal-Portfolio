@@ -7,7 +7,7 @@ function Skills() {
 
   <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
     
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
         <div className="flex items-center mb-4">
             <img src="Images/html.png" alt="HTML" className="w-10 h-10 mr-3" />
             <div>
@@ -19,7 +19,7 @@ function Skills() {
         <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
         <div className="flex items-center mb-4">
           <img src="Images/css-3.png" alt="CSS" className="w-10 h-10 mr-3" />
           <div>
@@ -31,7 +31,7 @@ function Skills() {
         <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
         <div className="flex items-center mb-4">
          <img src="Images/js.png" alt="JavaScript" className="w-10 h-10 mr-3" />
             <div>
@@ -43,7 +43,7 @@ function Skills() {
          <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
          <div className="flex items-center mb-4">
             <img src="Images/python.png" alt="Python" className="w-10 h-10 mr-3" />
         <div>
@@ -55,7 +55,7 @@ function Skills() {
       <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
     </div>
 
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
  <div className="flex items-center mb-4">
         <img src="Images/react.png" alt="React" className="w-10 h-10 mr-3" />
         <div>
@@ -67,7 +67,7 @@ function Skills() {
       <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">Self-taught</span></p>
     </div>
 
-<div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+<div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
  <div className="flex items-center mb-4">
         <img src="Images/c++.png" alt="C++" className="w-10 h-10 mr-3" />
         <div>
@@ -79,7 +79,7 @@ function Skills() {
       <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
  <div className="flex items-center mb-4">
         <img src="Images/Tailwind CSS.png" alt="Tailwind" className="w-10 h-10 mr-3" />
         <div>
@@ -91,7 +91,7 @@ function Skills() {
       <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
-   <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+   <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
  <div className="flex items-center mb-4">
         <img src="Images/figma.png" alt="Figma" className="w-10 h-10 mr-3" />
         <div>
@@ -103,7 +103,7 @@ function Skills() {
       <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">Self-taught</span></p>
     </div>
 
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
  <div className="flex items-center mb-4">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" className="w-10 h-10 mr-3" />
         <div>
@@ -115,7 +115,7 @@ function Skills() {
       <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
     </div>
     
-    <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
  <div className="flex items-center mb-4">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# Logo" className="w-10 h-10 mr-3" />
         <div>
@@ -127,7 +127,7 @@ function Skills() {
       <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
     </div>
 
-   <div className="bg-slate-900 rounded-xl p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:border hover:border-amber-400">
+   <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
   <div className="flex items-center mb-4">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" className="w-10 h-10 mr-3" />
     <div>

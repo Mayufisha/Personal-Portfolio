@@ -24,7 +24,7 @@ function Contact(){
     <h2 className="font-['Space_Grotesk'] text-4xl md:text-5xl font-semibold text-center tracking-tight mb-8">
       Contact Me
     </h2>
-    <form ref={form} onSubmit={sendEmail} className="bg-slate-900 p-8 rounded-lg shadow-lg space-y-6">
+    <form ref={form} onSubmit={sendEmail} className="bg-slate-900/80 p-8 rounded-xl border border-slate-800 shadow-lg space-y-6">
       
       <input 
         type="text" 
