@@ -13,9 +13,15 @@ function Home() {
             </a>
           </div>
          <div className="text-center md:text-left max-w-lg">
-           <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Samuel Molla</h1>
-           <h3 className="text-2xl text-amber-400 mb-4">A Full-Stack Developer</h3>
-           <p className="mb-6 text-slate-300">I create elegant and efficient solutions using modern web technologies.</p>
+           <h1 className="font-['Space_Grotesk'] text-5xl md:text-6xl font-semibold leading-tight tracking-tight mb-4">
+             Hi, I'm Samuel Molla
+           </h1>
+           <h3 className="font-['Space_Grotesk'] text-2xl md:text-3xl text-amber-400 mb-4">
+             A Full-Stack Developer
+           </h3>
+           <p className="mb-6 text-slate-300 leading-relaxed">
+             I create elegant and efficient solutions using modern web technologies.
+           </p>
            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6">
              <a href="./Samuel_Molla_Resume.pdf" className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-semibold py-2 px-6 rounded transition" target="_blank">Resume</a>
            </div>

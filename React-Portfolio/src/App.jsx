@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-slate-950">
+      <div className="bg-slate-950 font-['Manrope'] text-[15px] md:text-base">
       <Header active={active} setActive={setActive} />
       <main className="min-h-[70vh]">
         <Section />

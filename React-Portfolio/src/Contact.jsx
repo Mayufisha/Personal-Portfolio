@@ -21,7 +21,9 @@ function Contact(){
     return(
         <section id="contact" className="min-h-screen py-16 bg-gradient-to-b from-slate-950 to-slate-900 text-slate-100">
   <div className="max-w-xl mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
+    <h2 className="font-['Space_Grotesk'] text-4xl md:text-5xl font-semibold text-center tracking-tight mb-8">
+      Contact Me
+    </h2>
     <form ref={form} onSubmit={sendEmail} className="bg-slate-900 p-8 rounded-lg shadow-lg space-y-6">
       
       <input 

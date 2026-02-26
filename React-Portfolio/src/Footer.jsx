@@ -32,7 +32,7 @@ function Footer({ active, setActive }) {
         </nav>
 
         <div className="text-center">
-      <h2 className="text-lg font-semibold mb-3">Let's Connect</h2>
+      <h2 className="font-['Space_Grotesk'] text-xl font-medium mb-3">Let's Connect</h2>
       <div className="flex justify-center gap-6 text-2xl">
         <a href="mailto:sambenmayu@gmail.com" target="_blank" className="hover:text-amber-400 transition">
           <i className="fa-solid fa-envelope"></i>

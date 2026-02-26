@@ -14,7 +14,7 @@ export default function Header({ active, setActive }) {
     <header className="py-4 bg-slate-900 px-6 rounded-lg shadow-lg  sticky top-2 z-50 flex justify-between items-center">
       <button                                       
         onClick={() => setActive("home")}
-        className="text-slate-100 text-xl font-bold hover:text-amber-400 transition duration-300"
+        className="font-['Space_Grotesk'] text-slate-100 text-xl font-semibold hover:text-amber-400 transition duration-300"
       >
         Samuel Molla
       </button>

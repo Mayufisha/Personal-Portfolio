@@ -1,7 +1,9 @@
 function Skills() {
     return (
         <section id="skills" className="py-16 bg-slate-950 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900/50 via-slate-950 to-slate-950 text-slate-100">
-  <h1 className="text-3xl font-bold text-center mb-12">Technical Skills</h1>
+  <h1 className="font-['Space_Grotesk'] text-4xl md:text-5xl font-semibold text-center tracking-tight mb-12">
+    Technical Skills
+  </h1>
 
   <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
     

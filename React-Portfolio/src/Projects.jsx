@@ -2,7 +2,9 @@ function Projects() {
   return (
     <section id="projects" className="min-h-screen py-16 bg-slate-900 text-slate-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
+        <h2 className="font-['Space_Grotesk'] text-4xl md:text-5xl font-semibold text-center tracking-tight mb-12">
+          My Projects
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Expense Tracker */}
@@ -13,7 +15,7 @@ function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Expense Tracker</h3>
+              <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">Expense Tracker</h3>
               <p className="text-slate-300 mb-4">
                 A cross-platform .NET MAUI app for managing expenses, goals, charts, schedules, and
                 monthly budgeting.
@@ -39,7 +41,7 @@ function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">SkillSwap 2.0</h3>
+              <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">SkillSwap 2.0</h3>
               <p className="text-slate-300 mb-4">
                 A peer-learning platform with profiles, skill feeds, categories, favorites, and a
                 fully responsive Tailwind UI.
@@ -73,7 +75,7 @@ function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Job Application Tracker</h3>
+              <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">Job Application Tracker</h3>
               <p className="text-slate-300 mb-4">
                 A full-stack CRUD web app to manage job applications with filters, secure login, and
                 responsive design.
@@ -107,7 +109,7 @@ function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">A Personal Portfolio</h3>
+              <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">A Personal Portfolio</h3>
               <p className="text-slate-300 mb-4">
                 A responsive personal portfolio showcasing projects, skills, and contact info with
                 smooth navigation — built with HTML, Tailwind CSS, and JavaScript.
@@ -141,7 +143,7 @@ function Projects() {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Little Lemon Restaurant</h3>
+              <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">Little Lemon Restaurant</h3>
               <p className="text-slate-300 mb-4">
                 A responsive website designed for a fictional restaurant, featuring a clean UI and
                 smooth navigation.
