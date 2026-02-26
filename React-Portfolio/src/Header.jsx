@@ -71,7 +71,7 @@ export default function Header({ active, setActive }) {
               onClick={() => setMenuOpen(false)}
               aria-label="Close navigation menu"
             >
-              ✕
+              X
             </button>
             {nav.map((item) => (
               <button

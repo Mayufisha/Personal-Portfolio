@@ -112,7 +112,7 @@ function Projects() {
               <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">A Personal Portfolio</h3>
               <p className="text-slate-300 mb-4">
                 A responsive personal portfolio showcasing projects, skills, and contact info with
-                smooth navigation — built with HTML, Tailwind CSS, and JavaScript.
+                smooth navigation -- built with HTML, Tailwind CSS, and JavaScript.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a

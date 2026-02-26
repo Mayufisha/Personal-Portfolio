@@ -16,7 +16,7 @@ function Skills() {
             </div>
         </div>
         <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Advanced</span></p>
-        <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
+        <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
     <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -28,7 +28,7 @@ function Skills() {
           </div>
         </div>
         <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Advanced</span></p>
-        <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
+        <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
     <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -40,7 +40,7 @@ function Skills() {
             </div>
          </div>
          <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Advanced</span></p>
-         <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
+         <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
     <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -52,7 +52,7 @@ function Skills() {
         </div>
       </div>
       <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Intermediate</span></p>
-      <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
+      <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC</span></p>
     </div>
 
     <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -64,7 +64,7 @@ function Skills() {
         </div>
       </div>
       <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Intermediate</span></p>
-      <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">Self-taught</span></p>
+      <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">Self-taught</span></p>
     </div>
 
 <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -76,7 +76,7 @@ function Skills() {
         </div>
       </div>
       <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Intermediate</span></p>
-      <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
+      <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
     <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -88,7 +88,7 @@ function Skills() {
         </div>
       </div>
       <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Advanced</span></p>
-      <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
+      <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC & Self-taught</span></p>
     </div>
 
    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -100,7 +100,7 @@ function Skills() {
         </div>
       </div>
       <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Intermediate</span></p>
-      <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">Self-taught</span></p>
+      <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">Self-taught</span></p>
     </div>
 
     <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -112,7 +112,7 @@ function Skills() {
         </div>
       </div>
       <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Intermediate</span></p>
-      <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
+      <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC</span></p>
     </div>
     
     <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -124,7 +124,7 @@ function Skills() {
         </div>
       </div>
       <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Beginer</span></p>
-      <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
+      <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC</span></p>
     </div>
 
    <div className="bg-slate-900/80 rounded-xl p-6 border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500">
@@ -136,7 +136,7 @@ function Skills() {
     </div>
   </div>
   <p className="text-sm"><span className="text-slate-400">Proficiency:</span> <span className="text-amber-400 font-semibold">Beginner</span></p>
-  <p className="text-sm mt-2"><span className="text-slate-400">📍 Learned at:</span> <span className="font-semibold">VCC</span></p>
+  <p className="text-sm mt-2"><span className="text-slate-400">Learned at:</span> <span className="font-semibold">VCC</span></p>
 </div>
 
 

@@ -13,7 +13,7 @@ function About(){
         <h2 className="font-['Space_Grotesk'] text-2xl md:text-3xl font-medium tracking-tight">
           Learning to Code on Mobile
         </h2>
-        <small className="text-slate-400 block mb-2">2019–2022</small>
+        <small className="text-slate-400 block mb-2">2019-2022</small>
         <p className="text-slate-300 leading-relaxed">
           I began my coding journey on mobile devices, exploring the fundamentals of website development using HTML, CSS, and JavaScript.
         </p>
@@ -27,7 +27,7 @@ function About(){
         <h2 className="font-['Space_Grotesk'] text-2xl md:text-3xl font-medium tracking-tight">
           Studying Computer Science at University
         </h2>
-        <small className="text-slate-400 block mb-2">2022–2023</small>
+        <small className="text-slate-400 block mb-2">2022-2023</small>
         <p className="text-slate-300 leading-relaxed">
           During my university studies, I focused on website development, C++ console applications, and strengthening my problem-solving skills in programming.
         </p>
@@ -41,7 +41,7 @@ function About(){
         <h2 className="font-['Space_Grotesk'] text-2xl md:text-3xl font-medium tracking-tight">
           Online Learning Journey
         </h2>
-        <small className="text-slate-400 block mb-2">2023–2024</small>
+        <small className="text-slate-400 block mb-2">2023-2024</small>
         <p className="text-slate-300 leading-relaxed">
           I advanced my skills by learning React for dynamic web applications and explored UI/UX design using Figma, alongside improving my JavaScript expertise.
         </p>
@@ -56,7 +56,7 @@ function About(){
         <h2 className="font-['Space_Grotesk'] text-2xl md:text-3xl font-medium tracking-tight">
           College Studies
         </h2>
-        <small className="text-slate-400 block mb-2">2024–Present</small>
+        <small className="text-slate-400 block mb-2">2024-Present</small>
         <p className="text-slate-300 leading-relaxed">
           Currently, I am focusing on website development, C++ console applications, and experimenting with Python graphics to build interactive applications.
         </p>
