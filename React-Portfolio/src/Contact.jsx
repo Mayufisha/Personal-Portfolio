@@ -19,16 +19,16 @@ function Contact(){
     e.target.reset();
   };
     return(
-        <section id="contact" className="min-h-screen py-16 bg-gray-900 text-white">
+        <section id="contact" className="min-h-screen py-16 bg-gradient-to-b from-slate-950 to-slate-900 text-slate-100">
   <div className="max-w-xl mx-auto px-4">
     <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
-    <form ref={form} onSubmit={sendEmail} className="bg-slate-800 p-8 rounded-lg shadow-lg space-y-6">
+    <form ref={form} onSubmit={sendEmail} className="bg-slate-900 p-8 rounded-lg shadow-lg space-y-6">
       
       <input 
         type="text" 
         name="name"
         placeholder="Name" 
-        className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        className="w-full px-4 py-2 bg-slate-900 text-slate-100 border border-slate-600 rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
         required
       />
 
@@ -36,7 +36,7 @@ function Contact(){
         type="email" 
         name="email"
         placeholder="Email" 
-        className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        className="w-full px-4 py-2 bg-slate-900 text-slate-100 border border-slate-600 rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
         required
       />
 
@@ -44,16 +44,16 @@ function Contact(){
         placeholder="Message" 
         name="message"
         rows="5"
-        className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500"
+        className="w-full px-4 py-2 bg-slate-900 text-slate-100 border border-slate-600 rounded resize-none focus:outline-none focus:ring-2 focus:ring-amber-500"
         required
       ></textarea>
 
       <input 
         type="submit" 
         value="Send Message" 
-        className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-4 rounded cursor-pointer transition"
+        className="w-full bg-amber-500 hover:bg-amber-600 text-slate-100 font-semibold py-2 px-4 rounded cursor-pointer transition"
       />
-      {status && <p className="text-center text-emerald-400 mt-2">{status}</p>}
+      {status && <p className="text-center text-amber-400 mt-2">{status}</p>}
     </form>
   </div>
 </section>

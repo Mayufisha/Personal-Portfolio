@@ -1,12 +1,12 @@
 function Projects() {
   return (
-    <section id="projects" className="min-h-screen py-16 bg-gray-900 text-white">
+    <section id="projects" className="min-h-screen py-16 bg-slate-900 text-slate-100">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Expense Tracker */}
-          <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
             <img
               src="/Images/expense-tracker.png"
               alt="Expense Tracker Screenshot"
@@ -14,7 +14,7 @@ function Projects() {
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Expense Tracker</h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-slate-300 mb-4">
                 A cross-platform .NET MAUI app for managing expenses, goals, charts, schedules, and
                 monthly budgeting.
               </p>
@@ -23,7 +23,7 @@ function Projects() {
                   href="https://github.com/Mayufisha/ExpenseTracker"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition"
+                  className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   GitHub
                 </a>
@@ -32,7 +32,7 @@ function Projects() {
           </div>
 
           {/* SkillSwap 2.0 */}
-          <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
             <img
               src="/Images/skillSwap.png"
               alt="SkillSwap 2.0 Screenshot"
@@ -40,7 +40,7 @@ function Projects() {
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">SkillSwap 2.0</h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-slate-300 mb-4">
                 A peer-learning platform with profiles, skill feeds, categories, favorites, and a
                 fully responsive Tailwind UI.
               </p>
@@ -49,7 +49,7 @@ function Projects() {
                   href="https://skillswap-2-0.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition"
+                  className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   Live Demo
                 </a>
@@ -57,7 +57,7 @@ function Projects() {
                   href="https://github.com/Mayufisha/SkillSwap-2.0"
                   target="_blank"
                   rel="noreferrer"
-                  className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-medium py-1 px-4 rounded transition"
+                  className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   GitHub
                 </a>
@@ -66,7 +66,7 @@ function Projects() {
           </div>
 
           {/* Job Application Tracker */}
-          <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
             <img
               src="/Images/Job-tracker-logo.png"
               alt="Job Application Tracker Screenshot"
@@ -74,7 +74,7 @@ function Projects() {
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Job Application Tracker</h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-slate-300 mb-4">
                 A full-stack CRUD web app to manage job applications with filters, secure login, and
                 responsive design.
               </p>
@@ -83,7 +83,7 @@ function Projects() {
                   href="https://my-job-application-tracker.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition"
+                  className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   Live Demo
                 </a>
@@ -91,7 +91,7 @@ function Projects() {
                   href="https://github.com/Mayufisha/Job-Application-Tracker"
                   target="_blank"
                   rel="noreferrer"
-                  className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-medium py-1 px-4 rounded transition"
+                  className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   GitHub
                 </a>
@@ -100,7 +100,7 @@ function Projects() {
           </div>
 
           {/* Personal Portfolio */}
-          <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
             <img
               src="/Images/plain-portfolio.png"
               alt="Personal Portfolio"
@@ -108,7 +108,7 @@ function Projects() {
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">A Personal Portfolio</h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-slate-300 mb-4">
                 A responsive personal portfolio showcasing projects, skills, and contact info with
                 smooth navigation — built with HTML, Tailwind CSS, and JavaScript.
               </p>
@@ -117,7 +117,7 @@ function Projects() {
                   href="https://mayufisha.github.io/Portfolio-2.0"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition"
+                  className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   Live Demo
                 </a>
@@ -125,7 +125,7 @@ function Projects() {
                   href="https://github.com/Mayufisha/Portfolio-2.0"
                   target="_blank"
                   rel="noreferrer"
-                  className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-medium py-1 px-4 rounded transition"
+                  className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   GitHub
                 </a>
@@ -134,7 +134,7 @@ function Projects() {
           </div>
 
           {/* Little Lemon Restaurant */}
-          <div className="bg-slate-800 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
+          <div className="bg-slate-900 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-1 transform transition duration-300 ease-in-out overflow-hidden">
             <img
               src="/Images/little-lemon-preview.png"
               alt="Little Lemon Restaurant"
@@ -142,7 +142,7 @@ function Projects() {
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Little Lemon Restaurant</h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-slate-300 mb-4">
                 A responsive website designed for a fictional restaurant, featuring a clean UI and
                 smooth navigation.
               </p>
@@ -151,7 +151,7 @@ function Projects() {
                   href="https://mayufisha.github.io/Little-Lemon-Restaurant/index.html"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-1 px-4 rounded transition"
+                  className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   Live Demo
                 </a>
@@ -159,7 +159,7 @@ function Projects() {
                   href="https://github.com/Mayufisha/Little-Lemon-Restaurant"
                   target="_blank"
                   rel="noreferrer"
-                  className="border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-medium py-1 px-4 rounded transition"
+                  className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-100 font-medium py-1 px-4 rounded transition"
                 >
                   GitHub
                 </a>

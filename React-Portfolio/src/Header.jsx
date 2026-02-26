@@ -11,17 +11,17 @@ export default function Header({ active, setActive }) {
   ];
 
   return (
-    <header className="py-4 bg-slate-800 px-6 rounded-lg shadow-lg  sticky top-2 z-50 flex justify-between items-center">
+    <header className="py-4 bg-slate-900 px-6 rounded-lg shadow-lg  sticky top-2 z-50 flex justify-between items-center">
       <button                                       
         onClick={() => setActive("home")}
-        className="text-white text-xl font-bold hover:text-emerald-400 transition duration-300"
+        className="text-slate-100 text-xl font-bold hover:text-amber-400 transition duration-300"
       >
         Samuel Molla
       </button>
 
       {/* Hamburger for mobile */}
       <button
-        className="md:hidden text-gray-200 focus:outline-none"
+        className="md:hidden text-slate-200 focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Open navigation menu"
       >
@@ -52,8 +52,8 @@ export default function Header({ active, setActive }) {
               key={item.id}
               onClick={() => setActive(item.id)}
               className={
-                "hover:text-emerald-400 transition " +
-                (isActive ? "text-emerald-400" : "text-gray-200")
+                "hover:text-amber-400 transition " +
+                (isActive ? "text-amber-400" : "text-slate-200")
               }
             >
               {item.label}
@@ -65,9 +65,9 @@ export default function Header({ active, setActive }) {
       {/* Side nav for mobile */}
       {menuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex">
-          <nav className="bg-slate-800 w-2/3 max-w-xs h-full p-6 flex flex-col gap-6">
+          <nav className="bg-slate-900 w-2/3 max-w-xs h-full p-6 flex flex-col gap-6">
             <button
-              className="self-end mb-8 text-gray-400"
+              className="self-end mb-8 text-slate-400"
               onClick={() => setMenuOpen(false)}
               aria-label="Close navigation menu"
             >
@@ -82,7 +82,7 @@ export default function Header({ active, setActive }) {
                 }}
                 className={
                   "text-left py-2 px-2 rounded hover:bg-slate-700 transition " +
-                  (active === item.id ? "text-emerald-400" : "text-gray-200")
+                  (active === item.id ? "text-amber-400" : "text-slate-200")
                 }
               >
                 {item.label}

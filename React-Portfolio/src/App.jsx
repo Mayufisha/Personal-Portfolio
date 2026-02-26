@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-gray-900">
+      <div className="bg-slate-950">
       <Header active={active} setActive={setActive} />
       <main className="min-h-[70vh]">
         <Section />
