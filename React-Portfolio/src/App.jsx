@@ -38,7 +38,7 @@ export default function App() {
       <div className="bg-slate-950 font-['Manrope'] text-[15px] md:text-base">
       <Header active={active} setActive={setActive} />
       <main className="min-h-[70vh]">
-        <Section />
+        <Section setActive={setActive} />
       </main>
       <Footer  active={active} setActive={setActive} />
       </div>

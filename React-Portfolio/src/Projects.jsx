@@ -6,6 +6,38 @@ function Projects() {
           My Projects
         </h2>
 
+        <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg p-6 md:p-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <img
+              src="/Images/expense-tracker.png"
+              alt="Expense Tracker Screenshot"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+            <div>
+              <p className="text-amber-400 font-semibold mb-2">Featured Project</p>
+              <h3 className="font-['Space_Grotesk'] text-2xl md:text-3xl font-medium mb-3">Expense Tracker</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                A cross-platform .NET MAUI app for managing expenses, goals, charts, schedules, and
+                monthly budgeting. Built to make personal finance simple and visual.
+              </p>
+              <div className="flex flex-wrap gap-2 text-sm mb-6">
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">.NET MAUI</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">C#</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">SQLite</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Charts</span>
+              </div>
+              <a
+                href="https://github.com/Mayufisha/ExpenseTracker"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-semibold py-2 px-6 rounded transition inline-block"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Expense Tracker */}
           <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
