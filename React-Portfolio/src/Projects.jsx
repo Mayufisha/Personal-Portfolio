@@ -11,7 +11,7 @@ function Projects() {
             <img
               src="/Images/expense-tracker.png"
               alt="Expense Tracker Screenshot"
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-64 object-contain rounded-lg bg-slate-950 p-4"
             />
             <div>
               <p className="text-amber-400 font-semibold mb-2">Featured Project</p>
