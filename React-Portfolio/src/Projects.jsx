@@ -39,37 +39,6 @@ function Projects() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Expense Tracker */}
-          <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
-            <img
-              src="/Images/expense-tracker.png"
-              alt="Expense Tracker Screenshot"
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">Expense Tracker</h3>
-              <p className="text-slate-300 mb-4">
-                A cross-platform .NET MAUI app for managing expenses, goals, charts, schedules, and
-                monthly budgeting.
-              </p>
-              <div className="flex flex-wrap gap-2 text-sm mb-6">
-                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">.NET MAUI</span>
-                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">C#</span>
-                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">SQLite</span>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="https://github.com/Mayufisha/ExpenseTracker"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-medium py-1 px-4 rounded transition"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
           {/* SkillSwap 2.0 */}
           <div className="bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
             <img
@@ -159,7 +128,7 @@ function Projects() {
               <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">A Personal Portfolio</h3>
               <p className="text-slate-300 mb-4">
                 A responsive personal portfolio showcasing projects, skills, and contact info with
-                smooth navigation -- built with HTML, Tailwind CSS, and JavaScript.
+                smooth navigation. Built with HTML, Tailwind CSS, and JavaScript.
               </p>
               <div className="flex flex-wrap gap-2 text-sm mb-6">
                 <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">HTML</span>

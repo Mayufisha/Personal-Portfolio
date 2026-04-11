@@ -3,10 +3,10 @@ import { useRef, useState } from 'react';
 function Contact(){
   const form = useRef();
   const [status, setStatus] = useState("");
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     try{
-     emailjs.sendForm(
+     await emailjs.sendForm(
         "service_2n8ny4b",
         "template_btn1lqg",
         form.current,

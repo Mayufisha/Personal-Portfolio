@@ -48,7 +48,7 @@ function Footer({ active, setActive }) {
       </div> 
       
       <div className="text-center text-sm text-slate-400 mt-2 -mb-6 ">
-       &copy; 2025 Samuel Molla. All Rights Reserved.
+       &copy; {new Date().getFullYear()} Samuel Molla. All Rights Reserved.
       </div>
     </footer>
     );
