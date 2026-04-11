@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <section id="projects" className="min-h-screen py-16 bg-slate-900 text-slate-100">
+    <section id="projects" className="min-h-screen py-16 bg-slate-950 text-slate-100">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="font-['Space_Grotesk'] text-4xl md:text-5xl font-semibold text-center tracking-tight mb-12">
           My Projects

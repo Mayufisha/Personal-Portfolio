@@ -1,6 +1,6 @@
 function About(){
     return(
-         <section id="about" className="py-16 bg-slate-900 text-slate-100">
+         <section id="about" className="py-16 bg-slate-950 text-slate-100">
         <h1 className="font-['Space_Grotesk'] text-4xl md:text-5xl font-semibold text-center tracking-tight mb-6">
           My Learning Path
         </h1>
