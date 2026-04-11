@@ -13,7 +13,7 @@ function Contact(){
         "m_3-wuO4CzWqVtDEF"
       );
       setStatus("Message sent successfully!");
-    } catch (error) {
+    } catch {
       setStatus("Failed to send message. Please try again later.");
     }
     e.target.reset();

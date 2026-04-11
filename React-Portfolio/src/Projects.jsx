@@ -52,6 +52,11 @@ function Projects() {
                 A cross-platform .NET MAUI app for managing expenses, goals, charts, schedules, and
                 monthly budgeting.
               </p>
+              <div className="flex flex-wrap gap-2 text-sm mb-6">
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">.NET MAUI</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">C#</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">SQLite</span>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="https://github.com/Mayufisha/ExpenseTracker"
@@ -78,6 +83,11 @@ function Projects() {
                 A peer-learning platform with profiles, skill feeds, categories, favorites, and a
                 fully responsive Tailwind UI.
               </p>
+              <div className="flex flex-wrap gap-2 text-sm mb-6">
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">React</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Tailwind</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Responsive UI</span>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="https://skillswap-2-0.netlify.app/"
@@ -112,6 +122,11 @@ function Projects() {
                 A full-stack CRUD web app to manage job applications with filters, secure login, and
                 responsive design.
               </p>
+              <div className="flex flex-wrap gap-2 text-sm mb-6">
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">React</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Node</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">MongoDB</span>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="https://my-job-application-tracker.netlify.app/"
@@ -146,6 +161,11 @@ function Projects() {
                 A responsive personal portfolio showcasing projects, skills, and contact info with
                 smooth navigation -- built with HTML, Tailwind CSS, and JavaScript.
               </p>
+              <div className="flex flex-wrap gap-2 text-sm mb-6">
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">HTML</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Tailwind</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">JavaScript</span>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="https://mayufisha.github.io/Portfolio-2.0"
@@ -180,6 +200,11 @@ function Projects() {
                 A responsive website designed for a fictional restaurant, featuring a clean UI and
                 smooth navigation.
               </p>
+              <div className="flex flex-wrap gap-2 text-sm mb-6">
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">HTML</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">CSS</span>
+                <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">JavaScript</span>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="https://mayufisha.github.io/Little-Lemon-Restaurant/index.html"

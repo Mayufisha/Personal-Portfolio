@@ -1,4 +1,3 @@
-import { useState } from "react";
 function Footer({ active, setActive }) {
   const footer_nav = [
     { id: "home", label: "Home" },
@@ -22,7 +21,8 @@ function Footer({ active, setActive }) {
               key={item.id}
               onClick={() => setActive(item.id)}
               className={
-                "hover:text-amber-400 transition "
+                "hover:text-amber-400 transition " +
+                (isActive ? "text-amber-400" : "text-slate-200")
               }
             >
               {item.label}
@@ -34,13 +34,13 @@ function Footer({ active, setActive }) {
         <div className="text-center">
       <h2 className="font-['Space_Grotesk'] text-xl font-medium mb-3">Let's Connect</h2>
       <div className="flex justify-center gap-6 text-2xl">
-        <a href="mailto:sambenmayu@gmail.com" target="_blank" className="hover:text-amber-400 transition">
+        <a href="mailto:sambenmayu@gmail.com" target="_blank" rel="noreferrer" className="hover:text-amber-400 transition">
           <i className="fa-solid fa-envelope"></i>
         </a>
-        <a href="https://www.linkedin.com/in/samuel-molla" target="_blank" className="hover:text-amber-400 transition">
+        <a href="https://www.linkedin.com/in/samuel-molla" target="_blank" rel="noreferrer" className="hover:text-amber-400 transition">
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/Mayufisha" target="_blank" className="hover:text-amber-400 transition">
+        <a href="https://github.com/Mayufisha" target="_blank" rel="noreferrer" className="hover:text-amber-400 transition">
           <i className="fa-brands fa-github"></i>
         </a>
       </div>
