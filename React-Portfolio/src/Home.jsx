@@ -54,11 +54,11 @@ function Home({ setActive }) {
              <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Tailwind</span>
              <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Node</span>
              <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">MongoDB</span>
-             <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Figma</span>
+             <span className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">Express</span>
            </div>
          </div>
 
-         <div className="w-40 h-40 md:w-64 md:h-64 rounded-xl overflow-hidden border-4 border-slate-800 shadow-lg">
+         <div className="w-40 h-40 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-slate-800 shadow-lg">
            <img src="Images/SamuelMolla.jpg" alt="Samuel Molla" className="block w-full h-full object-cover"/>
          </div>
       </section>
