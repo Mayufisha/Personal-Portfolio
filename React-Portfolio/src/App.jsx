@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -10,10 +10,25 @@ import Contact from "./Contact";
 export default function App() {
   const [active, setActive] = useState("home");
 
+  const sections = useMemo(
+    () => ({
+      home: Home,
+      about: About,
+      skills: Skills,
+      projects: Projects,
+      contact: Contact,
+    }),
+    []
+  );
+
+  const Section = sections[active] ?? Home;
+
   useEffect(() => {
     const element = document.getElementById(active);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [active]);
 
@@ -21,12 +36,8 @@ export default function App() {
     <>
       <div className="bg-slate-950 font-['Manrope'] text-[15px] md:text-base">
         <Header active={active} setActive={setActive} />
-        <main>
-          <Home setActive={setActive} />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
+        <main className="min-h-[70vh]">
+          <Section setActive={setActive} />
         </main>
         <Footer active={active} setActive={setActive} />
       </div>
