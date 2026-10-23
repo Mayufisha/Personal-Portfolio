@@ -52,7 +52,6 @@ export default function Home() {
         </div>
         <div className="hero-visual">
           <div className="visual-topline">
-            <span className="tiny-spark">✳</span>
             <span>
               ONE DEVELOPER.
               <br />A FEW DIFFERENT WORLDS.

@@ -222,7 +222,7 @@ export default function Projects() {
             ))}
           </div>
           <p className="playground-note">
-            <span>✳</span> Open an app. Move a window. Type <code>help</code> in
+            Open an app. Move a window. Type <code>help</code> in
             the terminal. Make yourself at home.
           </p>
         </div>
