@@ -1,14 +1,14 @@
 @import "tailwindcss";
 :root {
-  --paper: #f6f5f0;
-  --card: #fffefa;
-  --ink: #242622;
-  --muted: #6f7369;
-  --line: #dcded4;
+  --paper: #ded4c4;
+  --card: #eae1d3;
+  --ink: #2e2c27;
+  --muted: #625d53;
+  --line: #bfb39f;
   --accent: #c34b28;
   --accent-dark: #a6391d;
-  --soft: #eeeee6;
-  --green: #e5eadc;
+  --soft: #d2c6b3;
+  --green: #cbd0b7;
   color-scheme: light;
   font-family: "Manrope", system-ui, sans-serif;
   color: var(--ink);
@@ -357,8 +357,8 @@ html[data-theme="dark"] .button-primary {
 }
 .desktop-preview {
   display: block;
-  background: #e7e7dd;
-  border: 1px solid #d5d5c8;
+  background: #d3c8b6;
+  border: 1px solid #bdb19c;
   padding: 13px;
   border-radius: 6px;
   transform: rotate(-3deg);
@@ -718,9 +718,9 @@ html[data-theme="dark"] .button-primary {
   font-size: 12px;
 }
 .experiments-section {
-  background: #e9ede3;
-  border-top: 1px solid #dde1d4;
-  border-bottom: 1px solid #dde1d4;
+  background: #ced1bc;
+  border-top: 1px solid #b8bda4;
+  border-bottom: 1px solid #b8bda4;
   padding: 70px 0 45px;
   color: #293326;
 }
@@ -751,8 +751,8 @@ html[data-theme="dark"] .experiments-section {
   gap: 25px;
 }
 .edition {
-  background: #f7f7ef;
-  border: 1px solid #d0d7c7;
+  background: #e2dacb;
+  border: 1px solid #b6bda6;
   padding: 16px;
   border-radius: 5px;
   transition: transform 0.25s;
@@ -841,7 +841,7 @@ html[data-theme="dark"] .edition {
 .about-photo {
   position: relative;
   padding: 10px;
-  background: #e4e3d9;
+  background: #d4c7b3;
   border: 1px solid var(--line);
   width: 100%;
   max-width: 330px;
