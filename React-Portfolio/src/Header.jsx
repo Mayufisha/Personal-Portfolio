@@ -1,98 +1,98 @@
-import { useState } from "react";
-
-export default function Header({ active, setActive }) {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const nav = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
+import { useEffect, useState } from "react";
+export default function Header({ active, theme, setTheme }) {
+  const [menu, setMenu] = useState(false);
+  const links = [
+    ["projects", "Work"],
+    ["experiments", "Playground"],
+    ["about", "About"],
+    ["contact", "Contact"],
   ];
-
+  useEffect(() => {
+    function escape(e) {
+      if (e.key === "Escape") setMenu(false);
+    }
+    window.addEventListener("keydown", escape);
+    return () => window.removeEventListener("keydown", escape);
+  }, []);
   return (
-    <header className="py-4 bg-slate-900 px-6 rounded-lg shadow-lg  sticky top-2 z-50 flex justify-between items-center">
-      <button                                       
-        onClick={() => setActive("home")}
-        className="font-['Space_Grotesk'] text-slate-100 text-xl font-semibold hover:text-amber-400 transition duration-300"
+    <header className="site-header">
+      <a
+        href="#home"
+        className="brand"
+        onClick={() => setMenu(false)}
+        aria-label="Samuel Molla home"
       >
-        Samuel Molla
-      </button>
-
-      {/* Hamburger for mobile */}
-      <button
-        className="md:hidden text-slate-200 focus:outline-none"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Open navigation menu"
-      >
-        <svg
-          className="w-7 h-7"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-
-      {/* Desktop nav */}
+        <span className="monogram">
+          sm<span>↗</span>
+        </span>
+        <span>
+          Samuel Molla<small>Developer & curious human</small>
+        </span>
+      </a>
       <nav
-        className="nav-links hidden md:flex gap-6 text-sm font-medium"
+        id="mobile-navigation"
+        className={menu ? "header-nav is-open" : "header-nav"}
         aria-label="Main navigation"
       >
-        {nav.map((item) => {
-          const isActive = active === item.id;
-          return (
-            <button
-              key={item.id}
-              onClick={() => setActive(item.id)}
-              className={
-                "hover:text-amber-400 transition " +
-                (isActive ? "text-amber-400" : "text-slate-200")
-              }
-            >
-              {item.label}
-            </button>
-          );
-        })}
+        {links.map(([id, label]) => (
+          <a
+            key={id}
+            href={"#" + id}
+            aria-current={active === id ? "location" : undefined}
+            onClick={() => setMenu(false)}
+          >
+            {label}
+          </a>
+        ))}
       </nav>
-
-      {/* Side nav for mobile */}
-      {menuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex">
-          <nav className="bg-slate-900 w-2/3 max-w-xs h-full p-6 flex flex-col gap-6">
-            <button
-              className="self-end mb-8 text-slate-400"
-              onClick={() => setMenuOpen(false)}
-              aria-label="Close navigation menu"
+      <div className="header-actions">
+        <button
+          className="theme-toggle"
+          aria-label={
+            theme === "light" ? "Switch to dark theme" : "Switch to light theme"
+          }
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          title="Change color theme"
+        >
+          {theme === "light" ? (
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
             >
-              X
-            </button>
-            {nav.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => {
-                  setActive(item.id);
-                  setMenuOpen(false);
-                }}
-                className={
-                  "text-left py-2 px-2 rounded hover:bg-slate-700 transition " +
-                  (active === item.id ? "text-amber-400" : "text-slate-200")
-                }
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
-          {/* Click outside to close */}
-          <div className="flex-1" onClick={() => setMenuOpen(false)} />
-        </div>
-      )}
+              <path d="M21 13a9 9 0 0 1-10-10A9 9 0 1 0 21 13Z" />
+            </svg>
+          ) : (
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M20 4l-2 2M6 18l-2 2" />
+            </svg>
+          )}
+        </button>
+        <a
+          className="resume-link"
+          href="/Samuel_Molla_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Résumé <span>↗</span>
+        </a>
+        <button
+          className="menu-toggle"
+          aria-label={menu ? "Close menu" : "Open menu"}
+          aria-expanded={menu}
+          aria-controls="mobile-navigation"
+          onClick={() => setMenu(!menu)}
+        >
+          {menu ? "×" : "☰"}
+        </button>
+      </div>
     </header>
   );
 }

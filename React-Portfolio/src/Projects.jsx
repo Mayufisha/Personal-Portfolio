@@ -1,153 +1,232 @@
 import { useState } from "react";
-
-const projects = [
+import { originalProjects } from "./projects-data";
+export const desktopProjects = [
   {
-    title: "SkillSwap 2.0",
-    image: "/Images/skillSwap.png",
-    alt: "SkillSwap 2.0 Screenshot",
+    title: "Ubuntu Desktop Portfolio",
+    image: "/Images/portfolio-ubuntu.png",
+    alt: "Ubuntu portfolio desktop",
     description:
-      "A peer-learning platform with profiles, skill feeds, categories, favorites, and a responsive Tailwind UI.",
-    tags: ["React", "Tailwind", "Responsive UI"],
+      "A portfolio you can explore like a GNOME desktop. Open apps, move windows, browse projects, and find your way through the terminal.",
+    tags: ["React", "GNOME inspired", "Interactive desktop"],
+    githubRepo: "Mayufisha/Portfolio-Ubuntu",
     links: [
-      { label: "Live Demo", href: "https://skillswap-2-0.netlify.app/" },
-      { label: "GitHub", href: "https://github.com/Mayufisha/SkillSwap-2.0", secondary: true },
+      { label: "Explore desktop", href: "https://ubuntu.samuelmolla.dev" },
+      {
+        label: "Source",
+        href: "https://github.com/Mayufisha/Portfolio-Ubuntu",
+      },
     ],
+    category: "Experiments",
   },
   {
-    title: "CareHub",
-    role: "Full-stack Developer",
-    image: "/Images/carehub_logo.jpg",
-    alt: "CareHub logo",
+    title: "Kali Desktop Portfolio",
+    image: "/Images/portfolio-kali.png",
+    alt: "Kali portfolio with terminal and project file manager",
     description:
-      "A care-facility platform for residents, medications, staff, MAR records, inventory, and AI handoffs.",
-    tags: ["React", "React Native", ".NET 8", "ASP.NET Core", "PostgreSQL", "Docker"],
-    links: [{ label: "GitHub", href: "https://github.com/Mayufisha/CareHub" }],
-  },
-  {
-    title: "Stock Broker Application",
-    role: "Android/backend Developer",
-    image: "/Images/StockBroker.png",
-    alt: "Stock Broker Application logo",
-    description:
-      "A Kotlin trading simulator with buy/sell flows, portfolio tracking, transactions, admin tools, and AI guidance.",
-    tags: ["Kotlin", "Jetpack Compose", "Node.js", "Express", "MongoDB", "Firebase Gemini"],
-    links: [{ label: "GitHub", href: "https://github.com/Maheep123/Stock_Broker_TheRest" }],
-  },
-  {
-    title: "Expense Tracker",
-    image: "/Images/expense-tracker.png",
-    alt: "Expense Tracker Screenshot",
-    description: "A .NET MAUI app for expenses, goals, charts, schedules, and monthly budgeting.",
-    tags: [".NET MAUI", "C#", "SQLite", "Charts"],
-    links: [{ label: "GitHub", href: "https://github.com/Mayufisha/ExpenseTracker" }],
-  },
-  {
-    title: "Job Application Tracker",
-    image: "/Images/Job-tracker-logo.png",
-    alt: "Job Application Tracker Screenshot",
-    description: "A full-stack CRUD app for job applications with filters, secure login, and responsive design.",
-    tags: ["React", "Node", "MongoDB"],
+      "A terminal-first Xfce inspired workspace with a project file manager, searchable app launcher, taskbar, and four workspaces.",
+    tags: ["React", "Xfce inspired", "Terminal"],
+    githubRepo: "Mayufisha/Portfolio-Kali",
     links: [
-      { label: "Live Demo", href: "https://my-job-application-tracker.netlify.app/" },
-      { label: "GitHub", href: "https://github.com/Mayufisha/Job-Application-Tracker", secondary: true },
+      { label: "Explore desktop", href: "https://kali.samuelmolla.dev" },
+      { label: "Source", href: "https://github.com/Mayufisha/Portfolio-Kali" },
     ],
-  },
-  {
-    title: "A Personal Portfolio",
-    image: "/Images/plain-portfolio.png",
-    alt: "Personal Portfolio",
-    description: "A responsive portfolio for projects, skills, and contact info. Built with HTML, Tailwind, and JavaScript.",
-    tags: ["HTML", "Tailwind", "JavaScript"],
-    links: [
-      { label: "Live Demo", href: "https://mayufisha.github.io/Portfolio-2.0" },
-      { label: "GitHub", href: "https://github.com/Mayufisha/Portfolio-2.0", secondary: true },
-    ],
-  },
-  {
-    title: "Little Lemon Restaurant",
-    image: "/Images/little-lemon-preview.png",
-    alt: "Little Lemon Restaurant",
-    description: "A responsive website for a fictional restaurant with a clean UI and smooth navigation.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    links: [
-      { label: "Live Demo", href: "https://mayufisha.github.io/Little-Lemon-Restaurant/index.html" },
-      { label: "GitHub", href: "https://github.com/Mayufisha/Little-Lemon-Restaurant", secondary: true },
-    ],
+    category: "Experiments",
   },
 ];
-
-function ProjectCard({ project }) {
+export const projects = [
+  ...desktopProjects,
+  ...originalProjects.map((project) => ({
+    ...project,
+    category: project.tags.some((t) => ["Kotlin", ".NET MAUI"].includes(t))
+      ? "Mobile & desktop"
+      : "Web apps",
+  })),
+];
+function Card({ project, index }) {
   return (
-    <div className="relative bg-slate-900/80 rounded-xl border border-slate-800 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-amber-500 overflow-hidden">
-      {project.role && (
-        <p className="absolute left-3 top-3 z-10 rounded bg-slate-950/90 px-3 py-1 text-xs font-semibold text-amber-400">
-          {project.role}
-        </p>
-      )}
-      <img src={project.image} alt={project.alt} className="block w-full h-48 object-cover" />
-      <div className="p-6">
-        <h3 className="font-['Space_Grotesk'] text-xl md:text-2xl font-medium mb-2">{project.title}</h3>
-        <p className="text-slate-300 mb-4">{project.description}</p>
-        <div className="flex flex-wrap gap-2 text-sm mb-6">
-          {project.tags.map((tag) => (
-            <span key={tag} className="px-3 py-1 rounded-full border border-slate-700 text-slate-300">
-              {tag}
-            </span>
-          ))}
-        </div>
-        <div className="flex flex-wrap gap-4">
-          {project.links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              target="_blank"
-              rel="noreferrer"
-              className={
-                link.secondary
-                  ? "border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-100 font-medium py-1 px-4 rounded transition"
-                  : "bg-amber-500 hover:bg-amber-600 text-slate-100 font-medium py-1 px-4 rounded transition"
-              }
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
+    <article
+      className={
+        "work-card " + (project.category === "Experiments" ? "is-desktop" : "")
+      }
+    >
+      <a
+        className="work-image"
+        href={project.links[0].href}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={"Open " + project.title}
+      >
+        <img src={project.image} alt={project.alt} loading="lazy" />
+        <span className="image-arrow">↗</span>
+        {project.role && <span className="project-role">{project.role}</span>}
+      </a>
+      <div className="work-caption">
+        <span className="work-number">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+        <span>{project.category}</span>
       </div>
-    </div>
+      <h3>{project.title}</h3>
+      <p>{project.description}</p>
+      <div className="work-tags">
+        {project.tags.map((tag) => (
+          <span key={tag}>{tag}</span>
+        ))}
+      </div>
+      <div className="work-links">
+        {project.links.map((link) => (
+          <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+            {link.label} <span>↗</span>
+          </a>
+        ))}
+      </div>
+    </article>
   );
 }
-
-function Projects() {
-  const [showMore, setShowMore] = useState(false);
-  const visibleProjects = showMore ? projects : projects.slice(0, 6);
-
+export default function Projects() {
+  const [filter, setFilter] = useState("All work");
+  const [search, setSearch] = useState("");
+  const filtered = projects.filter(
+    (p) =>
+      (filter === "All work" || p.category === filter) &&
+      (p.title + " " + p.tags.join(" ") + " " + p.description)
+        .toLowerCase()
+        .includes(search.toLowerCase()),
+  );
   return (
-    <section id="projects" className="min-h-screen py-16 bg-slate-950 text-slate-100">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="font-['Space_Grotesk'] text-4xl md:text-5xl font-semibold text-center tracking-tight mb-12">
-          My Projects
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {visibleProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+    <>
+      <section id="projects" className="projects-section section-wrap">
+        <div className="section-kicker">
+          <span>01 / SELECTED WORK</span>
+          <span>FROM IDEA TO SOMETHING REAL</span>
+        </div>
+        <div className="section-heading">
+          <h2>
+            A few things
+            <br />
+            <em>I’ve put into the world.</em>
+          </h2>
+          <p>
+            Web applications, mobile projects, and the occasional experiment.
+            Each one, a chance to solve a different kind of problem.
+          </p>
+        </div>
+        <div className="work-toolbar">
+          <div className="work-filters" aria-label="Filter projects">
+            {["All work", "Web apps", "Mobile & desktop", "Experiments"].map(
+              (label) => (
+                <button
+                  key={label}
+                  aria-pressed={filter === label}
+                  onClick={() => setFilter(label)}
+                >
+                  {label}
+                  {label === "All work" && <small>{projects.length}</small>}
+                </button>
+              ),
+            )}
+          </div>
+          <label className="work-search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="10" cy="10" r="6" />
+              <path d="m15 15 5 5" />
+            </svg>
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Find a project…"
+              aria-label="Search projects"
+            />
+          </label>
+        </div>
+        <p className="search-result-count" role="status">
+          {filtered.length} projects
+          {filter !== "All work" ? " / " + filter : ""}
+        </p>
+        <div className="work-grid">
+          {filtered.map((project) => (
+            <Card
+              key={project.title}
+              project={project}
+              index={projects.indexOf(project)}
+            />
           ))}
         </div>
-
-        {projects.length > 6 && (
-          <div className="mt-10 flex justify-center">
+        {filtered.length === 0 && (
+          <div className="empty-projects">
+            <h3>No projects found.</h3>
+            <p>Try a different technology or project name.</p>
             <button
-              type="button"
-              onClick={() => setShowMore((current) => !current)}
-              className="bg-amber-500 hover:bg-amber-600 text-slate-100 font-semibold py-2 px-6 rounded transition"
+              onClick={() => {
+                setSearch("");
+                setFilter("All work");
+              }}
             >
-              {showMore ? "View Less" : "View More"}
+              Reset filters ↗
             </button>
           </div>
         )}
-      </div>
-    </section>
+      </section>
+      <section id="experiments" className="experiments-section">
+        <div className="section-wrap">
+          <div className="section-kicker">
+            <span>02 / THE PLAYGROUND</span>
+            <span>TAKE THE SCENIC ROUTE</span>
+          </div>
+          <div className="experiment-intro">
+            <h2>
+              Same developer.
+              <br />
+              <em>Different operating systems.</em>
+            </h2>
+            <p>
+              A portfolio doesn’t have to be a page.
+              <br />
+              Sometimes it can be a whole desktop.
+            </p>
+          </div>
+          <div className="edition-grid">
+            {desktopProjects.map((project, index) => (
+              <a
+                key={project.title}
+                className={"edition edition-" + (index ? "kali" : "ubuntu")}
+                href={project.links[0].href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="edition-meta">
+                  <span>{index ? "02 / XFCE" : "01 / GNOME"}</span>
+                  <span>OPEN DESKTOP ↗</span>
+                </div>
+                <img src={project.image} alt={project.alt} loading="lazy" />
+                <div className="edition-caption">
+                  <div>
+                    <h3>
+                      {index ? "The Kali edition." : "The Ubuntu edition."}
+                    </h3>
+                    <p>
+                      {index
+                        ? "A terminal, four workspaces, and room to explore."
+                        : "A warm welcome. A familiar place to click around."}
+                    </p>
+                  </div>
+                  <span>↗</span>
+                </div>
+              </a>
+            ))}
+          </div>
+          <p className="playground-note">
+            <span>✳</span> Open an app. Move a window. Type <code>help</code> in
+            the terminal. Make yourself at home.
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
-
-export default Projects;
