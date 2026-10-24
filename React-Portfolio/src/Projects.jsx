@@ -37,9 +37,11 @@ export const projects = [
   ...desktopProjects,
   ...originalProjects.map((project) => ({
     ...project,
-    category: project.tags.some((t) => ["Kotlin", ".NET MAUI"].includes(t))
-      ? "Mobile & desktop"
-      : "Web apps",
+    category: project.platforms?.includes("Web") && project.platforms?.includes("Mobile")
+      ? "Web & mobile"
+      : project.tags.some((t) => ["Kotlin", ".NET MAUI"].includes(t))
+        ? "Mobile & desktop"
+        : "Web apps",
   })),
 ];
 function Card({ project, index }) {
@@ -88,7 +90,9 @@ export default function Projects() {
   const [search, setSearch] = useState("");
   const filtered = projects.filter(
     (p) =>
-      (filter === "All work" || p.category === filter) &&
+      (filter === "All work" || p.category === filter ||
+        (filter === "Web apps" && p.platforms?.includes("Web")) ||
+        (filter === "Mobile & desktop" && p.platforms?.some(platform => ["Mobile", "Desktop"].includes(platform)))) &&
       (p.title + " " + p.tags.join(" ") + " " + p.description)
         .toLowerCase()
         .includes(search.toLowerCase()),

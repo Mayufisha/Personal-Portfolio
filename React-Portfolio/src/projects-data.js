@@ -18,11 +18,12 @@ export const originalProjects = [
   },
   {
     title: "CareHub",
+    platforms: ["Web", "Mobile"],
     role: "Full-stack Developer",
     image: "/Images/carehub_logo.jpg",
     alt: "CareHub logo",
     description:
-      "A care-facility platform for residents, medications, staff, MAR records, inventory, and AI handoffs.",
+      "A web and mobile care-facility platform for residents, medications, staff, MAR records, inventory, and AI handoffs.",
     tags: [
       "React",
       "React Native",
@@ -58,15 +59,16 @@ export const originalProjects = [
     ],
   },
   {
-    title: "Expense Tracker",
-    image: "/Images/expense-tracker.png",
-    alt: "Expense Tracker Screenshot",
+    title: "Money Manager",
+    platforms: ["Mobile", "Desktop"],
+    image: "/Images/money-manager.png",
+    alt: "Money Manager Screenshot",
     description:
-      "A .NET MAUI app for expenses, goals, charts, schedules, and monthly budgeting.",
-    tags: [".NET MAUI", "C#", "SQLite", "Charts"],
-    githubRepo: "Mayufisha/ExpenseTracker",
+      "A cross-platform personal finance app for accounts, statement imports, budgets, goals, schedules, and shared expenses, with Supabase sync.",
+    tags: [".NET MAUI", "C#", "SQLite", "PostgreSQL", "Supabase"],
+    githubRepo: "Mayufisha/Money-Manager",
     links: [
-      { label: "GitHub", href: "https://github.com/Mayufisha/ExpenseTracker" },
+      { label: "GitHub", href: "https://github.com/Mayufisha/Money-Manager" },
     ],
   },
   {
