@@ -1945,3 +1945,11 @@ html[data-theme="dark"] .contact-legacy input[type="submit"] {
     scroll-behavior: auto !important;
   }
 }
+
+.catalog-cta{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:64px;padding:36px 0;border-top:1px solid var(--line)}
+.catalog-cta h3{font-size:clamp(24px,3vw,36px);margin:12px 0}.catalog-cta p{color:var(--muted)}
+.catalog-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:32px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.catalog-brand{font-weight:700;font-size:20px}.catalog-brand span{font-weight:400;color:var(--muted)}
+.catalog-header nav{display:flex;align-items:center;gap:24px}.catalog-header button{background:transparent;color:inherit;border:1px solid var(--line);border-radius:30px;padding:10px 16px;cursor:pointer}
+.catalog-main .projects-section{padding-top:72px}.catalog-footer{display:flex;justify-content:space-between;gap:24px;padding-top:32px;padding-bottom:32px;border-top:1px solid var(--line)}
+@media(max-width:640px){.catalog-cta,.catalog-header{align-items:flex-start;flex-direction:column}.catalog-header nav{gap:16px;font-size:13px}.catalog-footer{font-size:13px}.catalog-main .projects-section{padding-top:40px}}

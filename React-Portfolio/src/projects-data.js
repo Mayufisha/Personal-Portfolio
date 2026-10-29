@@ -6,8 +6,8 @@ export const originalProjects = [
         "Desktop"
     ],
     "role": "Full-stack Developer",
-    "image": "/Images/shifttopo.svg",
-    "alt": "ShiftTopo workforce coordination project",
+    "image": "/Images/shifttopo-preview.png",
+    "alt": "ShiftTopo fictional demo dashboard",
     "description": "A manufacturing workforce coordination prototype for shift assignments, machine qualifications, work-order queues, break relief, absences, and handovers. Explore the fictional demo.",
     "tags": [
         "React",
@@ -28,14 +28,14 @@ export const originalProjects = [
     ]
 },
   {
-    "title": "JACK — Computer Vision",
+    "title": "JACK — Personal Assistant",
     "platforms": [
-        "Web"
+        "Desktop"
     ],
     "role": "Developer",
     "image": "/Images/jack.svg",
-    "alt": "JACK computer vision research project",
-    "description": "An experimental computer vision pipeline with staged model training, confidence calibration, an uncertain prediction option, and held-out evaluation reports.",
+    "alt": "JACK personal assistant project in development",
+    "description": "A personal assistant project inspired by Jarvis, being developed to bring everyday help and intelligent interactions into one companion. Computer vision is an early research component; broader assistant features are planned.",
     "tags": [
         "Python",
         "PyTorch",

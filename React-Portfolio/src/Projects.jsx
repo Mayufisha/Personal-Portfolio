@@ -37,7 +37,7 @@ export const projects = [
   ...desktopProjects,
   ...originalProjects.map((project) => ({
     ...project,
-    category: project.platforms?.includes("Web") && project.platforms?.includes("Mobile")
+    category: project.title.startsWith("JACK") ? "Experiments" : project.platforms?.includes("Web") && project.platforms?.includes("Mobile")
       ? "Web & mobile"
       : project.tags.some((t) => ["Kotlin", ".NET MAUI"].includes(t))
         ? "Mobile & desktop"
@@ -85,10 +85,12 @@ function Card({ project, index }) {
     </article>
   );
 }
-export default function Projects() {
+export default function Projects({ allProjects = false }) {
   const [filter, setFilter] = useState("All work");
   const [search, setSearch] = useState("");
-  const filtered = projects.filter(
+  const featuredTitles = ["ShiftTopo", "JACK — Personal Assistant", "Money Manager", "CareHub", "SkillSwap 2.0", "Job Application Tracker"];
+  const collection = allProjects ? projects : featuredTitles.map(title => projects.find(project => project.title === title)).filter(Boolean);
+  const filtered = collection.filter(
     (p) =>
       (filter === "All work" || p.category === filter ||
         (filter === "Web apps" && p.platforms?.includes("Web")) ||
@@ -101,14 +103,14 @@ export default function Projects() {
     <>
       <section id="projects" className="projects-section section-wrap">
         <div className="section-kicker">
-          <span>01 / SELECTED WORK</span>
+          <span>{allProjects ? "PROJECT DIRECTORY" : "01 / SELECTED WORK"}</span>
           <span>FROM IDEA TO SOMETHING REAL</span>
         </div>
         <div className="section-heading">
           <h2>
-            A few things
+            {allProjects ? "Every project." : "A few things"}
             <br />
-            <em>I’ve put into the world.</em>
+            <em>{allProjects ? "One place to explore." : "I’ve put into the world."}</em>
           </h2>
           <p>
             Web applications, mobile projects, and the occasional experiment.
@@ -125,7 +127,7 @@ export default function Projects() {
                   onClick={() => setFilter(label)}
                 >
                   {label}
-                  {label === "All work" && <small>{projects.length}</small>}
+                  {label === "All work" && <small>{collection.length}</small>}
                 </button>
               ),
             )}
@@ -158,7 +160,7 @@ export default function Projects() {
             <Card
               key={project.title}
               project={project}
-              index={projects.indexOf(project)}
+              index={collection.indexOf(project)}
             />
           ))}
         </div>
@@ -176,8 +178,9 @@ export default function Projects() {
             </button>
           </div>
         )}
+        {!allProjects && <div className="catalog-cta"><div><span className="section-kicker">KEEP EXPLORING</span><h3>There’s more in the collection.</h3><p>Browse all {projects.length} projects, from web apps to desktop experiments.</p></div><a className="primary-link" href="https://projects.samuelmolla.dev">View all projects ↗</a></div>}
       </section>
-      <section id="experiments" className="experiments-section">
+      {!allProjects && <section id="experiments" className="experiments-section">
         <div className="section-wrap">
           <div className="section-kicker">
             <span>02 / THE PLAYGROUND</span>
@@ -230,7 +233,7 @@ export default function Projects() {
             the terminal. Make yourself at home.
           </p>
         </div>
-      </section>
+      </section>}
     </>
   );
 }
