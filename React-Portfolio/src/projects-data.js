@@ -1,5 +1,55 @@
 export const originalProjects = [
   {
+    "title": "ShiftTopo",
+    "platforms": [
+        "Web",
+        "Desktop"
+    ],
+    "role": "Full-stack Developer",
+    "image": "/Images/shifttopo.svg",
+    "alt": "ShiftTopo workforce coordination project",
+    "description": "A manufacturing workforce coordination prototype for shift assignments, machine qualifications, work-order queues, break relief, absences, and handovers. Explore the fictional demo.",
+    "tags": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "SQLite",
+        "Electron"
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "href": "https://shifttopo.com"
+        },
+        {
+            "label": "Explore demo",
+            "href": "https://demo.shifttopo.com"
+        }
+    ]
+},
+  {
+    "title": "JACK — Computer Vision",
+    "platforms": [
+        "Web"
+    ],
+    "role": "Developer",
+    "image": "/Images/jack.svg",
+    "alt": "JACK computer vision research project",
+    "description": "An experimental computer vision pipeline with staged model training, confidence calibration, an uncertain prediction option, and held-out evaluation reports.",
+    "tags": [
+        "Python",
+        "PyTorch",
+        "FastAPI",
+        "OpenCV"
+    ],
+    "links": [
+        {
+            "label": "Discuss project",
+            "href": "mailto:sambenmayu@gmail.com?subject=JACK%20project"
+        }
+    ]
+},
+  {
     title: "SkillSwap 2.0",
     image: "/Images/skillSwap.png",
     alt: "SkillSwap 2.0 Screenshot",
@@ -64,7 +114,7 @@ export const originalProjects = [
     image: "/Images/money-manager.png",
     alt: "Money Manager Screenshot",
     description:
-      "A cross-platform personal finance app for accounts, statement imports, budgets, goals, schedules, and shared expenses, with Supabase sync.",
+      "A personal finance app for Android and Windows with expenses, budgets, goals, statement imports, and SplitFare for shared bills and settlements. Includes Supabase authentication and cloud backup; Android internal testing is underway.",
     tags: [".NET MAUI", "C#", "SQLite", "PostgreSQL", "Supabase"],
     githubRepo: "Mayufisha/Money-Manager",
     links: [
